@@ -41,12 +41,10 @@ rl.question('What should I name the file?', fileName => {
                                 });
 
                                 fs.appendFile(fileName, `<p style='font-size: x-small;'>Made with <a href='https://C1200.github.io/projects/sitebuilder'>SiteBuilder.js</a>\n</body></html>`, err => { if (err) console.log(err); });
-                                process.exit();
                             });
                         } else {
                             fs.appendFile(fileName, `<h4>Links:</h4>\n<p>None yet.</p>\n`, err => { if (err) console.log(err); });
                             fs.appendFile(fileName, `<p style='font-size: x-small;'>Made with <a href='https://C1200.github.io/projects/sitebuilder'>SiteBuilder.js</a>\n</body></html>`, err => { if (err) console.log(err); });
-                            process.exit();
                         }
                     });
                 });
